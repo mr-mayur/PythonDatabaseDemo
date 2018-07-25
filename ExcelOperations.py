@@ -45,7 +45,6 @@ class ExcelOperations :
 
 if __name__ == '__main__':
     ob = ExcelOperations()
-
     ob.getDataFromFile()
     print(ExcelOperations.listOfLines)
 
