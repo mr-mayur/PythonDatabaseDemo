@@ -79,11 +79,8 @@ if __name__ == '__main__':
     dbOb = DbOperations()
     list= ExcelOperations().readDataFromExcel()
     DbOperations().insertIntoDatabase(list)
-
-
     #dbOb.createDataBaseTable()
     dbOb.insertIntoDatabase(list)
     dbToFileList = dbOb.getAllRecordsFromDbIntoList()
     #dbOb.writeDataIntoFile(dbToFileList)
-
     #dbOb.dropTable()
